@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Home Page</title>
+    <style>
+        /* Basic CSS for the navigation bar */
+        body {
+            font-family: 'Roboto', sans-serif; /* Updated font */
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        .header {
+            padding: 20px 0;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            background-color: #222;
+            color: #fff;
+            border-bottom: 5px solid #ffd369;
+        }
+
+        nav {
+            overflow: hidden;
+            background-color: #222831;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 25px;
+            font-size: 18px;
+            margin: 0 15px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ffd369;
+            color: #222;
+            transform: scale(1.1);
+        }
+
+        nav a i {
+            margin-right: 10px;
+            font-size: 22px; /* Adjust icon size */
+        }
+
+        .im {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+
+        /* Add a hover effect for the navigation links */
+        /* nav a.active {
+            background-color: #00adb5;
+            color: #fff;
+            font-weight: bold;
+        } */
+
+        /* Add additional styles for footer or other sections as needed */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #222831;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h3>WELCOME TO MK-CINEMAS</h3>
+    </div>
+    
+    <nav>
+        <a href="thome.php" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="movie.php"><i class="fas fa-film"></i> Movies</a>
+        <a href="profile.php"><i class="fas fa-user"></i> Profile</a>
+        <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+    </nav>
+
+    <img class="im" src="tint.webp" alt="MK Cinemas">
+
+    <footer>
+        <p>&copy; 2025 MK-CINEMAS. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
